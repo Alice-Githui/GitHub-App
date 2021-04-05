@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http'
+import {ServiceService} from '../app/service.service'
 
 @Component({
   selector: 'app-homepage',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private serviceService: ServiceService, private httpClient: HttpClient)  {}
 
   ngOnInit(): void {
   }
