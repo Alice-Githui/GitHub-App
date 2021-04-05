@@ -1,6 +1,15 @@
 <app-navbar></app-navbar>
 <div class="component-fluid">
-    <div *ngFor = "let repo of repositories">
+    <div class="row">
+        <div *ngFor = "let repo of repositories" class = "col-md-3 card" id="repo-details">
+            <p id="fullname">GitHub Repository Name: {{repo.full_name}}</p>
+            <button class = "btn" style = "background-color: #7AF5F5"><a href = {{repo.html_url}}>View Repository on Github</a></button>
+            <br>
+            <p id="repodetails">{{repo.description}}</p>
+            
+            
+    
+        </div>
 
     </div>
 

@@ -1,0 +1,17 @@
+#repo-details{
+    border: 1px black solid;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.row{
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+#repo-details button a {
+    color: black;
+}
