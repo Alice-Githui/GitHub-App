@@ -16,10 +16,19 @@
         <div *ngIf = 'profile'>
             <div>
                 <div>
-                    {{profile.login}}
+                    <img src = {{profile.avatar_url}} alt ="github user's image">
                 </div>
+
             </div>
 
+            <div>
+                <div>
+                    Name is :{{profile.login | uppercase}}
+                    <br>
+                    Lives in: {{profile.location | uppercase}} and is a {{profile.bio | uppercase}}
+                </div>
+            </div>
+            
         </div>
 
     </div>
