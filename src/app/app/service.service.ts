@@ -29,6 +29,11 @@ export class ServiceService {
     return this.httpClient.get(`https://api.github.com/users/Alice-Githui/repos?access_token?client_id= ${environment.accessToken}`)
   }
 
+  updateProfile(username: string){
+    this.username = username
+
+  }
+
 
   
 

@@ -5,9 +5,9 @@
         <form>
             <div class="form-group">
                 <label for ="user-name">Enter Your GitHub UserName:</label>
-                <input type = "text" id="user-name" class="form-control"  placeholder = "Enter Your GitHub Name" #search> 
+                <input type = "text" id="user-name" class="form-control"  placeholder = "Enter Your GitHub Name" [(ngModel)]="username" name="username"> 
             </div>
-            <button type="submit" class="btn btn-info">Submit</button>
+            <button type="submit" class="btn btn-info" (click)= "submitName()">Submit</button>
     
         </form>
     
@@ -32,7 +32,7 @@
                     <br>
                     Lives in: {{profile.location | uppercase}} and is a {{profile.bio | uppercase}}
                     <br>
-                    Joined GitHub {{profile.created_at}} years ago
+                    Joined GitHub on <strong>{{profile.created_at | date}}</strong>
                 </div>
             </div>
             

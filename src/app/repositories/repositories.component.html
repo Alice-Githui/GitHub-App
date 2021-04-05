@@ -1,5 +1,6 @@
 <app-navbar></app-navbar>
 <div class="component-fluid">
+    <p class="rps">Repositories</p>
     <div class="row">
         <div *ngFor = "let repo of repositories" class = "col-md-3 card" id="repo-details">
             <p id="fullname">GitHub Repository Name: {{repo.full_name}}</p>

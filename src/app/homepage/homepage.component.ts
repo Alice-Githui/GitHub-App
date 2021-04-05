@@ -8,11 +8,16 @@ import {ServiceService} from '../app/service.service'
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
-  profile: any
+  profile: any;
+  username: string
 
 
-  constructor(private serviceService: ServiceService, private httpClient: HttpClient)  {
-    
+  constructor(private serviceService: ServiceService, private httpClient: HttpClient)  { }
+
+  submitName(){
+    this.serviceService.updateProfile(this.username)
+
+
   }
 
   ngOnInit(){
@@ -23,6 +28,8 @@ export class HomepageComponent implements OnInit {
       console.log(this.profile)
 
     })
+
+    
 
   }
 
