@@ -20,3 +20,11 @@
     font-weight: bold;
     margin-top: 10px;
 }
+
+form{
+    width: 500px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 370px;
+}
