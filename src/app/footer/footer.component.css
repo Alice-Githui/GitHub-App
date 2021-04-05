@@ -1,0 +1,21 @@
+.footer{
+    background-color: #7AF5F5;
+}
+
+footer ul li{
+    list-style-type: none;
+    color: black;
+    font-size: 18px;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+footer form{
+    width: 400px;
+}
+
+footer form label{
+    font-size: 20px;
+}
