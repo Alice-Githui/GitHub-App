@@ -1,6 +1,17 @@
 <app-navbar></app-navbar>
 <div class="component-fluid">
     <p class="rps">Repositories</p>
+    <div class="form-field">
+        <form>
+            <div class="form-group">
+                <label for ="user-name">Enter Your GitHub UserName:</label>
+                <input type = "text" id="user-name" class="form-control"  placeholder = "Enter Your GitHub Name" [(ngModel)]="username" name="username"> 
+            </div>
+            <button type="submit" class="btn btn-info" (click)= "submitName()">Submit</button>
+    
+        </form>
+    
+    </div>
     <div class="row">
         <div *ngFor = "let repo of repositories" class = "col-md-3 card" id="repo-details">
             <p id="fullname">GitHub Repository Name: {{repo.full_name}}</p>

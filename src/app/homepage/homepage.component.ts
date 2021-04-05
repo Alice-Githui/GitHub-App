@@ -16,6 +16,10 @@ export class HomepageComponent implements OnInit {
 
   submitName(){
     this.serviceService.updateProfile(this.username)
+    this.serviceService.getPersonsInfo().subscribe((data)=>{
+      this.profile = data
+    })
+  
 
 
   }
