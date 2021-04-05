@@ -24,23 +24,6 @@ export class HomepageComponent implements OnInit {
 
     })
 
-
-    // this.serviceService.getPersonsInfo().subscribe((data) =>{
-
-    //   console.log(data)
-
-
-
-    // })
-
-    // this.serviceService.getPersonsInfo().subscribe((data) =>{
-
-    //   console.log(data)
-
-
-
-    // })
-
   }
 
 }

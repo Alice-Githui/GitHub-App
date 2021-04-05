@@ -23,7 +23,13 @@ export class ServiceService {
 
   getPersonsInfo(){
       return this.httpClient.get(`https://api.github.com/users/${this.username}?access_token?client_id= ${environment.accessToken}`)
-      }
+  }
+
+  getPersonsRepos(){
+    return this.httpClient.get(`https://api.github.com/users/Alice-Githui/repos?access_token?client_id= ${environment.accessToken}`)
+  }
+
+
   
 
 }

@@ -20,12 +20,19 @@
                 </div>
 
             </div>
+            <br>
 
             <div>
-                <div>
+                <div class = "details">
                     Name is :{{profile.login | uppercase}}
                     <br>
+                    <br>
+                    <p *ngIf = "profile.email">Email Address: {{profile.email}}</p>
+                    <p *ngIf = "profile.twitter_username">Bio: {{profile.twitter_username}}</p>
+                    <br>
                     Lives in: {{profile.location | uppercase}} and is a {{profile.bio | uppercase}}
+                    <br>
+                    Joined GitHub {{profile.created_at}} years ago
                 </div>
             </div>
             
