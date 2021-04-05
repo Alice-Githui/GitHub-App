@@ -2,6 +2,17 @@
 
 @import "~bootstrap/dist/css/bootstrap.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
+
 *{
     box-sizing: border-box;
+    font-family: 'Zilla Slab', serif;
 }
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+
+}
+
