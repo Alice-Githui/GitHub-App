@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { CountYearsPipe } from './count-years.pipe';
+import { StrikethroughDirective } from './strikethrough.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CountYearsPipe } from './count-years.pipe';
     NavbarComponent,
     FooterComponent,
     RepositoriesComponent,
-    CountYearsPipe
+    CountYearsPipe,
+    StrikethroughDirective
   ],
   imports: [
     BrowserModule,

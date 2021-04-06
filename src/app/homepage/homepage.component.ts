@@ -9,7 +9,8 @@ import {ServiceService} from '../app/service.service'
 })
 export class HomepageComponent implements OnInit {
   profile: any;
-  username: string
+  username: string;
+  repositories: any
 
 
   constructor(private serviceService: ServiceService, private httpClient: HttpClient)  { }
@@ -19,6 +20,13 @@ export class HomepageComponent implements OnInit {
     this.serviceService.getPersonsInfo().subscribe((data)=>{
       this.profile = data
     })
+
+    this.serviceService.getPersonsRepos().subscribe((data) =>{
+      this.repositories = data;
+
+      console.log(this.repositories)
+    })
+
   
 
 
@@ -31,6 +39,12 @@ export class HomepageComponent implements OnInit {
 
       console.log(this.profile)
 
+    })
+
+    this.serviceService.getPersonsRepos().subscribe((data) =>{
+      this.repositories = data;
+
+      console.log(this.repositories)
     })
 
     

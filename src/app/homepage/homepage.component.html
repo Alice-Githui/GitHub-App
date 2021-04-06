@@ -24,7 +24,7 @@
 
             <div>
                 <div class = "details">
-                    Name is :{{profile.login | uppercase}}
+                    Username:<p appStrikethrough>{{profile.login | uppercase}}</p>
                     <br>
                     <br>
                     <p *ngIf = "profile.email">Email Address: {{profile.email}}</p>
@@ -32,7 +32,7 @@
                     <br>
                     Lives in: {{profile.location | uppercase}} and is a {{profile.bio | uppercase}}
                     <br>
-                    Joined GitHub on <strong>{{profile.created_at | date}}</strong>
+                    Joined GitHub on <strong appStrikethrough>{{profile.created_at | date}}</strong>
                 </div>
             </div>
             
