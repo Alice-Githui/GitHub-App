@@ -11,9 +11,6 @@ import {environment} from '../../environments/environment'
 })
 export class ServiceService {
   username: string;
-  // clientid = 'c58b916827f6f10d47e5';
-  // clientsecret = '52f5b7721f8c5bd7db47fb70c039162614bb04d3'
-
   
   constructor(private httpClient: HttpClient) { 
     console.log('Service is now ready')
